@@ -1,0 +1,18 @@
+[package]
+name = "schnorr-ark"
+version = "0.1.0"
+edition = "2021"
+description = "Schnorr signature implementation using Arkworks"
+authors = ["andyjsbell@gmail.com"]
+license = "MIT"
+repository = "https://github.com/andyjsbell/schnorr-ark"
+keywords = ["cryptography", "signatures", "schnorr", "arkworks", "elliptic-curves"]
+categories = ["cryptography"]
+
+[dependencies]
+ark-ff = { version = "0.5" }
+ark-test-curves = {version = "0.5.0", features = ["bls12_381_curve"]}
+rand ={ version = "*"}
+sha2 ={ version = "*"}
+ark-serialize-derive = "0.4.2"
+ark-serialize = "0.5"
